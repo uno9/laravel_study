@@ -11,7 +11,7 @@ class TestBatch extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'batch:test';
 
     /**
      * The console command description.
@@ -37,6 +37,6 @@ class TestBatch extends Command
      */
     public function handle()
     {
-        return 0;
+        echo "Hello, batch\n";
     }
 }
