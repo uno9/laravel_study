@@ -11,7 +11,7 @@ class TestBatch extends Command
      *
      * @var string
      */
-    protected $signature = 'batch:test';
+    protected $signature = 'batch:hoge';
 
     /**
      * The console command description.
@@ -37,6 +37,10 @@ class TestBatch extends Command
      */
     public function handle()
     {
-        echo "Hello, batch\n";
+      $this->line('Hello World!(line)');
+      $this->info('Hello World!(info)');
+      $this->comment('Hello World!(comment)');
+      $this->warn('Hello World!(warn)');
+      $this->error('Hello World!(error)');
     }
 }
